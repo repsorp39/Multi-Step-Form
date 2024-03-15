@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Multi-step form</title>
+</head>
+
+
+
+<body>
+    <!-- First step -->
+    <article class="article1 container  mt-5" id="step1">
+        <aside class="article1__aside p-5">
+
+            <div class="mb-4 block_step ">
+                <div class="number-step fw-bold text-light text-marine bg-step">1</div>
+                <div>
+                    <div class="aside-step">STEP1</div>
+                    <div class="fw-bold text-light step_part">YOUR INFO</div>
+                </div>
+            </div>
+
+            <div class="mb-4 block_step">
+                <div class="number-step fw-bold text-light">2</div>
+                <div>
+                    <div class="aside-step ">STEP2</div>
+                    <div class="fw-bold text-light step_part ">SELECT PLAN</div>
+                </div>
+            </div>
+            <div class="mb-4 block_step">
+                <div class="number-step fw-bold text-light">3</div>
+                <div>
+                    <div class="aside-step ">STEP3</div>
+                    <div class="fw-bold text-light step_part ">ADDS-ONS</div>
+                </div>
+            </div>
+            <div class="mb-4 block_step">
+                <div class="number-step fw-bold text-light">4</div>
+                <div>
+                    <div class="aside-step">STEP4</div>
+                    <div class="fw-bold text-light">SUMMARY</div>
+                </div>
+            </div>
+        </aside>
+        <div id="try">
+            <div class="mt-4">
+                <div class="personal-title fs-1 fw-bold mb-3">Personal info</div>
+                <div class="mb-4 topper">Please provide your name, email address, and phone number</div>
+            </div>
+            <div class="mb-4">
+                <label for="name" class="form-label text-marineblue fw-bold">Name</label>
+                <div class="error"> This field is required</div>
+                <input type="text" class="form-control" id="name" placeholder="e.g.Stephen King">
+            </div>
+
+            <div class="mb-4">
+                <label for="email" class="form-label fw-bold text-marineblue">Email Address</label>
+                <div class="error"> This field is required</div>
+                <input type="text" class="form-control" id="email" placeholder="e.g.stephenking@gmail.com">
+            </div>
+
+            <div class="mb-4">
+                <label for="phoneNumber" class="form-label text-marineblue fw-bold">Phone Number</label>
+                <div class="error"> This field is required</div>
+                <input type="text" class="form-control" id="phoneNumber" placeholder="e.g.+1234567890">
+            </div>
+            <button class="next_step btn  mt-5">Next Step</button>
+        </div>
+        </div>
+    </article>
+
+
+    <!--Second step-->
+    <article class="article1 container invisible  mt-5" id="step2">
+        <aside class="article1__aside p-5">
+
+            <div class="mb-4 block_step ">
+                <div class="number-step fw-bold text-light ">1</div>
+                <div>
+                    <div class="aside-step">STEP1</div>
+                    <div class="fw-bold text-light">YOUR INFO</div>
+                </div>
+            </div>
+
+            <div class="mb-4 block_step">
+                <div class="number-step fw-bold text-light text-marine bg-step">2</div>
+                <div>
+                    <div class="aside-step ">STEP2</div>
+                    <div class="fw-bold text-light step_part ">SELECT PLAN</div>
+                </div>
+            </div>
+
+            <div class="mb-4 block_step">
+                <div class="number-step fw-bold text-light">3</div>
+                <div>
+                    <div class="aside-step ">STEP3</div>
+                    <div class="fw-bold text-light step_part ">ADDS-ONS</div>
+                </div>
+            </div>
+
+            <div class="mb-4 block_step">
+                <div class="number-step fw-bold text-light">4</div>
+                <div>
+                    <div class="aside-step">STEP4</div>
+                    <div class="fw-bold text-light">SUMMARY</div>
+                </div>
+            </div>
+        </aside>
+        <div>
+            <div class="mt-4">
+
+                <div class="mt-4">
+                    <div class="personal-title fs-1 fw-bold mb-3">Select your plan</div>
+                    <div class="mb-4 topper">You have the option of monthly or yearly billing</div>
+                </div>
+
+                <div class="row mt-5" id="Game">
+
+                    <div class="col game" id="arcade">
+                        <div><img src="assets/images/icon-arcade.svg" alt="arcade_picture"></div>
+                        <div class="mt-5 type_game">Arcade</div>
+                        <div class="money-game">$9/mo</div>
+                    </div>
+
+
+                    <div class="col game">
+                        <div><img src="assets/images/icon-advanced.svg" alt="advanced_picture"></div>
+                        <div class="mt-5 type_game">Advanced</div>
+                        <div class="money-game">$12/mo</div>
+                    </div>
+
+
+                    <div class="col game">
+                        <div><img src="assets/images/icon-pro.svg" alt="pro_picture"></div>
+                        <div class="mt-5 type_game">Pro</div>
+                        <div class="money-game">$15/mo</div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="container end_step2 ">
+                <div class="period period-color">Monthly</div>
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" checked id="switcher">
+                </div>
+
+                <div class="period">Yearly</div>
+            </div>
+
+
+            <button class="prev_step btn mt-5" id="goback1">Go back</button>
+            <button class="next_step btn  mt-5" id="bouton2">Next Step</button>
+        </div>
+
+    </article>
+
+    <!--Step 3-->
+    <article class="article1 container invisible  mt-5" id="step3">
+        <aside class="article1__aside p-5">
+
+            <div class="mb-4 block_step ">
+                <div class="number-step fw-bold text-light ">1</div>
+                <div>
+                    <div class="aside-step">STEP1</div>
+                    <div class="fw-bold text-light">YOUR INFO</div>
+                </div>
+            </div>
+
+            <div class="mb-4 block_step">
+                <div class="number-step fw-bold text-light">2</div>
+                <div>
+                    <div class="aside-step ">STEP2</div>
+                    <div class="fw-bold text-light step_part  ">SELECT PLAN</div>
+                </div>
+            </div>
+
+            <div class="mb-4 block_step">
+                <div class="number-step fw-bold text-light text-marine bg-step">3</div>
+                <div>
+                    <div class="aside-step step_part  ">STEP3</div>
+                    <div class="fw-bold text-light">ADDS-ONS</div>
+                </div>
+            </div>
+
+            <div class="mb-4 block_step">
+                <div class="number-step fw-bold text-light">4</div>
+                <div>
+                    <div class="aside-step">STEP4</div>
+                    <div class="fw-bold text-light">SUMMARY</div>
+                </div>
+            </div>
+        </aside>
+        <div>
+
+            <div class="mt-4">
+                <div class="personal-title fs-1 fw-bold mb-3">Pick add-ons</div>
+                <div class="mb-4 topper">Adds-ons help enhance your gaming experience.</div>
+            </div>
+
+            <div>
+
+                <label for="add-pick-1" class="row pe-5 mb-4 pick-add">
+
+                    <div class="col-1 input_div "> <input class="checkbox" id="add-pick-1" checked type="checkbox"></div>
+                    <div class="col">
+                        <div class="pick-item"> Online service</div>
+                        <div class="item-content">Access to multiplayer game</div>
+                    </div>
+                    <div class="col-1  pick-price"> +$1/mo</div>
+                </label>
+
+
+                <label for="add-pick-2" class="row  pe-5 mb-4  pick-add ">
+
+                    <div class="col-1"> <input class="checkbox" id="add-pick-2" checked type="checkbox"></div>
+                    <div class="col">
+                        <div class="pick-item"> Larger storage</div>
+                        <div class="item-content">Extra 1TB of cloud save</div>
+                    </div>
+                    <div class="col-1 pick-price"> +$2/mo</div>
+                </label>
+
+
+                <label for="add-pick-3" class="row pe-5 mb-4  pick-add">
+
+                    <div class="col-1"> <input class="checkbox" id="add-pick-3" type="checkbox"></div>
+                    <div class="col">
+                        <div class="pick-item"> Customizable profile</div>
+                        <div class="item-content">Custom theme on your profile</div>
+                    </div>
+                    <div class="col-1  pick-price"> +$2/mo</div>
+                </label>
+
+            </div>
+            <button class="prev_step btn mt-5" id="goback2">Go back</button>
+            <button class="next_step btn  mt-5" id="bouton3">Next Step</button>
+        </div>
+
+        </div>
+    </article>
+    <!--Step 4-->
+    <article class="article1 container invisible  mt-5" id="lastStep">
+        <aside class="article1__aside p-5">
+
+            <div class="mb-4 block_step ">
+                <div class="number-step fw-bold text-light ">1</div>
+                <div>
+                    <div class="aside-step">STEP1</div>
+                    <div class="fw-bold text-light step_part  ">YOUR INFO</div>
+                </div>
+            </div>
+
+            <div class="mb-4 block_step">
+                <div class="number-step fw-bold text-light  ">2</div>
+                <div>
+                    <div class="aside-step ">STEP2</div>
+                    <div class="fw-bold text-light  step_part">SELECT PLAN</div>
+                </div>
+            </div>
+
+            <div class="mb-4 block_step">
+                <div class="number-step fw-bold text-light">3</div>
+                <div>
+                    <div class="aside-step  ">STEP3</div>
+                    <div class="fw-bold text-light  step_part">ADDS-ONS</div>
+                </div>
+            </div>
+
+            <div class="mb-4 block_step">
+                <div class="number-step fw-bold text-light text-marine bg-step">4</div>
+                <div>
+                    <div class="aside-step">STEP4</div>
+                    <div class="fw-bold text-light">SUMMARY</div>
+                </div>
+            </div>
+        </aside>
+
+        <!--Message de confirmation-->
+        <div class="success text-center">
+            <div><img src="assets/images/icon-thank-you.svg" alt="icon-succes"></div>
+            <div class="thanks my-4">Thank you!</div>
+            <div class="thanks-text"> Thanks for confirming your subscription! We hope you have fun using our plateform.If you ever need support,please feel free to email us at support@loremgaming.com.
+            </div>
+
+        </div>
+
+        <div class="subscription">
+            <div class="mt-4">
+                <div>
+                    <div class="mt-4">
+                        <div class="personal-title fs-1 fw-bold mb-3">Finishing up</div>
+                        <div class="mb-4 topper once">Double-check everything looks OK before confirming.</div>
+                    </div>
+
+                    <div class="row mt-5  ps-4 last-block">
+
+                        <div class="row mb-3 ground py-2">
+                            <div class="col-11">
+                                <div class="arcade"><span id="choice">Arcade </span> <span id="duration">(Monthly)</span></div>
+                                <div class="mb-3"><a id="change" href="#">Change</a></div>
+                            </div>
+                            <div class="col-1 arcade">$<span id="Price">9</span> /mo</div>
+
+                        </div>
+
+                        <div class="row   subs">
+                            <div class="col-11">
+                                <div class="online mb-2">Online service</div>
+                            </div>
+                            <div class="col-1 on">+$1/mo</div>
+
+                        </div>
+
+                        <div class="row mb-2  subs">
+                            <div class="col-11">
+                                <div class="online">Larger storage</div>
+                            </div>
+                            <div class="col-1 on">+$2/mo</div>
+
+                        </div>
+
+                        <div class="row mb-2 subs">
+                            <div class="col-11">
+                                <div class="online ">Customizable profile</div>
+                            </div>
+                            <div class="col-1 on">+$2/mo</div>
+
+                        </div>
+                    </div>
+
+                    <div class="row per-month  mt-3 mb-5">
+                        <div class="col-11">
+                            <div class="online ">Total <span>(per month)</span></div>
+                        </div>
+                        <div class="col-1 arcade2">+$12/mo</div>
+
+                    </div>
+
+                    <button class="prev_step btn mt-5" id="goback3">Go back</button>
+                    <button class="btn-last btn px-3 mt-5" id="confirm">Confirm</button>
+                </div>
+            </div>
+
+    </article>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

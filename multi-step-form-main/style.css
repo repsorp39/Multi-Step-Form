@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url(assets/fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'ubuntu2';
+    src: url(fonts/outfit/static/Outfit-Medium.ttf);
+}
+
+
+/*Color*/
+
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #bfe2fd;
+}
+
+.text-marine {
+    color: #02295a !important;
+}
+
+.article1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2rem;
+    background-color: #fafbff;
+    width: 1000px;
+    height: 630px;
+    border-radius: 10px;
+}
+
+.article1 .article1__aside {
+    background-image: url(assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    width: 300px;
+    margin-right: 5em;
+}
+
+.article1 .personal-title {
+    color: #02295a;
+    font-family: 'ubuntu';
+}
+
+.article1 .step_part {
+    display: inline-block;
+    width: 10em;
+}
+
+.article1 input {
+    height: 50px;
+}
+
+.article1 label {
+    color: #02295a;
+}
+
+.article1 .next_step {
+    background-color: #02295a;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #f0f6ff;
+    float: right;
+}
+
+.article1 .aside-step {
+    font-size: 0.9rem;
+    color: #d6d9e6;
+}
+
+.article1 .block_step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.article1 .bg-step {
+    background-color: #bfe2fd;
+    border: 3px #bfe2fd !important;
+}
+
+.article1 .number-step {
+    padding: 10px 17px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 1px solid #f0f6ff;
+}
+
+.article1 .topper {
+    color: #9699ab;
+    font-family: 'ubuntu2';
+}
+.kote{
+    border: 1px solid black;
+    max-width: 500px;
+}
+
+.article1 .game {
+    border: 1px solid #9699ab;
+    border-radius: 10px;
+    height: 175px;
+    width: 150px;
+    margin-right: 1.2rem;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+
+.article1 #arcade {
+    border: 1px solid #473dff;
+    background-color: #bfe2fd;
+}
+
+.article1 .type_game {
+    color: #02295a;
+    font-family: 'ubuntu';
+}
+
+.article1 .money-game {
+    color: #9699ab;
+}
+
+.article1 .prev_step {
+    font-family: 'ubuntu';
+    color: #9699ab;
+    cursor: pointer;
+}
+
+.article1 .prev_step:hover {
+    color: #02295a;
+}
+
+.article1 #switcher {
+    height: 20px;
+    width: 45px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.article1 .end_step2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 4rem;
+    border-radius: 10px;
+    background-color: #d6d9e6;
+    padding: 0.7rem;
+}
+
+.article1 .end_step2 div {
+    margin: auto;
+}
+
+.article1 .end_step2 .period {
+    color: #9699ab;
+    font-family: 'ubuntu';
+}
+
+.article1 .end_step2 .period-color {
+    color: #02295a;
+}
+
+#step3 input {
+    margin-right: 1rem;
+    width: 20px;
+}
+
+#step3 .pick-add {
+    border: 1px solid;
+    border-radius: 8px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    cursor: pointer;
+}
+
+.picker {
+    border-color: #473dff;
+    background-color: #bfe2fd;
+}
+
+#step3 .pick-item {
+    font-family: 'ubuntu';
+    color: #02295a;
+}
+
+#step3 .item-content {
+    color: #9699ab;
+    font-family: 'ubuntu2';
+}
+
+#step3 .pick-price {
+    margin-top: 0.8rem;
+    color: #473dff;
+    font-family: 'ubuntu';
+}
+
+#step3 .bg-pick {
+    background-color: #bfe2fd;
+}
+
+#lastStep .btn-last {
+    background-color: #473dff;
+    border-radius: 8px;
+    color: white;
+    float: right;
+    font-weight: bold;
+}
+
+#lastStep .last-block {
+    border-radius: 10px;
+    background-color: #d6d9e6;
+    width: 450px;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+#lastStep .ground {
+    border-bottom: 1px solid #9699ab;
+}
+
+#lastStep .arcade {
+    font-family: 'ubuntu';
+    color: #02295a;
+    padding-bottom: 0.5rem;
+}
+
+#lastStep a {
+    color: #473dff;
+}
+
+#lastStep .online {
+    color: #9699ab;
+    font-family: 'ubuntu2';
+}
+
+#lastStep .arcade2 {
+    color: #473dff;
+    font-family: 'ubuntu';
+}
+
+#lastStep .on {
+    color: #02295a;
+    font-family: 'ubuntu2';
+    font-weight: 0;
+}
+
+#lastStep .per-month {
+    width: 385px;
+}
+
+#lastStep .subscription {
+    display: block;
+}
+
+#lastStep .success {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: none;
+    margin-right: 4em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#lastStep .thanks {
+    font-size: 3.5em;
+    color: #02295a;
+    font-weight: bolder;
+}
+
+#lastStep .thanks-text {
+    color: #9699ab;
+    font-family: 'ubuntu2';
+    font-size: 1.2em;
+}
+
+.invisible {
+    display: none;
+}
+
+.invalid {
+    background-color: rose;
+    border: 1px solid rgb(245, 145, 162);
+}
+
+.valid {
+    border: 1px solid rgb(107, 221, 107);
+}
+
+.error {
+    display: none;
+    float: right;
+    color: rgb(236, 76, 76);
+    font-family: 'ubuntu2';
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.transition {
+    transition: all linear 5s !important;
+    transform: rotate(360deg);
+}
+
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url(assets/fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'ubuntu2';
+    src: url(fonts/outfit/static/Outfit-Medium.ttf);
+}
+
+
+/*Color*/
+
+//### Primary
+$Marineblue: hsl(213, 96%, 18%);
+$Purplishblue: hsl(243, 100%, 62%);
+$Pastelblue: hsl(228, 100%, 84%);
+$Lightblue: hsl(206, 94%, 87%);
+$Strawberryred: hsl(354, 84%, 57%);
+body {
+    box-sizing: border-box;
+    background-color: $Lightblue;
+}
+
+.text-marine {
+    color: $Marineblue !important;
+}
+
+//### Neutral
+$Coolgray: hsl(231, 11%, 63%);
+$Lightgray:hsl(229, 24%, 87%);
+$Magnolia: hsl(217, 100%, 97%);
+$Alabaster: hsl(231, 100%, 99%);
+$White: hsl(0, 0%, 100%);
+.article1 {
+    display: flex;
+    padding: 2rem;
+    background-color: $Alabaster;
+    width: 1000px;
+    height: 630px;
+    border-radius: 10px;
+    .article1__aside {
+        background-image: url(assets/images/bg-sidebar-desktop.svg);
+        background-repeat: no-repeat;
+        width: 300px;
+        margin-right: 5em;
+    }
+    .personal-title {
+        color: $Marineblue;
+        font-family: 'ubuntu';
+    }
+    .step_part {
+        display: inline-block;
+        width: 10em;
+    }
+    input {
+        height: 50px;
+    }
+    label {
+        color: $Marineblue;
+    }
+    .next_step {
+        background-color: $Marineblue;
+        border-radius: 10px;
+        font-weight: bold;
+        color: $Magnolia;
+        float: right;
+    }
+    .aside-step {
+        font-size: 0.9rem;
+        color: $Lightgray;
+    }
+    .block_step {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .bg-step {
+        background-color: $Lightblue;
+        border: 3px $Lightblue!important;
+    }
+    .number-step {
+        padding: 10px 17px;
+        margin-right: 1rem;
+        border-radius: 50%;
+        border: 1px solid $Magnolia;
+    }
+    .topper {
+        color: $Coolgray;
+        font-family: 'ubuntu2';
+    }
+    .game {
+        border: 1px solid $Coolgray;
+        border-radius: 10px;
+        height: 175px;
+        width: 150px;
+        margin-right: 1.2rem;
+        padding-top: 1rem;
+        cursor: pointer;
+    }
+    #arcade {
+        border: 1px solid $Purplishblue;
+        background-color: $Lightblue;
+    }
+    .type_game {
+        color: $Marineblue;
+        font-family: 'ubuntu';
+    }
+    .money-game {
+        color: $Coolgray;
+    }
+    .prev_step {
+        font-family: 'ubuntu';
+        color: $Coolgray;
+        cursor: pointer;
+    }
+    .prev_step:hover {
+        color: $Marineblue;
+    }
+    #switcher {
+        height: 20px;
+        width: 45px;
+        transform: rotate(180deg);
+    }
+    .end_step2 {
+        display: flex;
+        margin-top: 4rem;
+        border-radius: 10px;
+        background-color: $Lightgray;
+        padding: 0.7rem;
+        div {
+            margin: auto;
+        }
+        .period {
+            color: $Coolgray;
+            font-family: 'ubuntu';
+        }
+        .period-color {
+            color: $Marineblue;
+        }
+    }
+}
+
+#step3 {
+    input {
+        margin-right: 1rem;
+        width: 20px;
+    }
+    .pick-add {
+        border: 1px solid $Purplishblue;
+        border-radius: 8px;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        cursor: pointer;
+    }
+    .pick-item {
+        font-family: 'ubuntu';
+        color: $Marineblue;
+    }
+    .item-content {
+        color: $Coolgray;
+        font-family: 'ubuntu2';
+    }
+    .pick-price {
+        margin-top: 0.8rem;
+        color: $Purplishblue;
+        font-family: 'ubuntu';
+    }
+    .bg-pick {
+        background-color: $Lightblue;
+    }
+}
+
+#lastStep {
+    .btn-last {
+        background-color: $Purplishblue;
+        border-radius: 8px;
+        color: $White;
+        float: right;
+        font-weight: bold;
+    }
+    .last-block {
+        border-radius: 10px;
+        background-color: $Lightgray;
+        width: 450px;
+        padding-bottom: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .ground {
+        border-bottom: 1px solid $Coolgray;
+    }
+    .arcade {
+        font-family: 'ubuntu';
+        color: $Marineblue;
+        padding-bottom: 0.5rem;
+    }
+    a {
+        color: $Purplishblue;
+    }
+    .online {
+        color: $Coolgray;
+        font-family: 'ubuntu2';
+    }
+    .arcade2 {
+        color: $Purplishblue;
+        font-family: 'ubuntu';
+    }
+    .on {
+        color: $Marineblue;
+        font-family: 'ubuntu2';
+        font-weight: 0;
+    }
+    .per-month {
+        width: 385px;
+    }
+    .subscription {
+        display: block;
+    }
+    .success {
+        display: flex;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .thanks {
+        font-size: 3.5em;
+        color: $Marineblue;
+        font-weight: bolder;
+    }
+    .thanks-text {
+        color: $Coolgray;
+        font-family: 'ubuntu2';
+        font-size: 1.2em;
+    }
+}
+
+#step2,
+#step3,
+#lastStep {
+    display: none;
+}
+
+
+/*
+  if(plan[0].id==='arcade')
+        {
+            arcade=1;
+        }
+        else{
+            arcade=0;
+        }
+    
+        if(plan[1].id==='arcade')
+        {
+            advanced=1;
+        }
+        else{
+            advanced=0;
+        }
+        if(plan[2].id==='arcade')
+        {
+             pro=1;
+        }*/
